@@ -29,7 +29,7 @@ class Bank:
                 print(f'Снятие: {result}. Баланс: {self.balance}')
             else:
                 print('Запрос отклонён, недостаточно средств')
-            self.lock.acquire()
+            self.lock.acquire()                         # замок lock разблокирован
         time.sleep(0.001)                               # ожидание выполнения пополнения
 
 
